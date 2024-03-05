@@ -1,0 +1,53 @@
+.todo-wrapper {
+  display: grid;
+  grid-template-columns: [column-1] 16.6% [column-2] 16.6% [column-3] 16.6% [column-4] 16.6% [column-5] 16.6% [column-6] 16.6% [column-7];
+  grid-template-rows: [row-1] 25% [row-2] 25% [row-3] 25% [row-4] 25% [row-5];
+  grid-template-areas:
+    "title title title image image option"
+    "description description description image image ."
+    "description description description . . ."
+    "dueto dueto dueto createat createat createat";
+  padding: 10px;
+  min-height: 200px;
+  border: 5px solid var(--bg-deepindigo);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+.todo-wrapper .todo-title-wrapper {
+  grid-area: title;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  width: 90%;
+  inline-size: 100%;
+}
+
+.todo-wrapper .todo-description-wrapper {
+  grid-area: description;
+  word-wrap: break-word;
+  width: 90%;
+}
+.todo-wrapper .todo-dueto-wrapper {
+  grid-area: dueto;
+  display: flex;
+  align-items: center;
+}
+.todo-wrapper .todo-createat-wrapper {
+  grid-area: createat;
+  display: flex;
+  align-items: center;
+}
+.todo-wrapper .todo-image-wrapper {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-wrapper .todo-option-wrapper {
+  grid-area: option;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

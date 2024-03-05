@@ -1,0 +1,54 @@
+.selection {
+  min-width: 110px;
+  display: inline-block;
+  transition: all 0.5s ease;
+  position: relative;
+  font-size: 14px;
+  color: var(--text-black);
+  height: 100%;
+  text-align: left;
+}
+.selection > .select {
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  background-color: var(--bg-white);
+  border-radius: var(--border-radius);
+}
+.selection > .select > i {
+  font-size: 13px;
+  color: var(text-slate-grey);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  float: right;
+  line-height: 20px;
+}
+.selection > .dropdown-menu {
+  position: absolute;
+  background-color: var(--bg-white);
+  width: 100%;
+  left: 0;
+  margin-top: 10px;
+  box-shadow: 0 1px 2px rgb(204, 204, 204);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  display: none;
+  max-height: 144px;
+  overflow-y: auto;
+  z-index: 9;
+}
+.selection > .dropdown-menu li {
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.selection > .dropdown-menu {
+  padding: 0;
+  list-style: none;
+}
+.selection > .dropdown-menu li:hover {
+  background-color: var(--bg-silver-mist);
+}
+.selection > .dropdown-menu li:active {
+  background-color: var(--bg-light-grey);
+}

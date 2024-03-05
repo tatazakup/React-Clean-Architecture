@@ -1,0 +1,15 @@
+input[type="text"] {
+  border: none;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 400;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: var(--text-place-holder);
+    opacity: 1; /* Firefox */
+  }
+}
